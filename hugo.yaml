@@ -1,0 +1,71 @@
+title: Xin Zhou
+baseURL: 'https://Ivis4ml.github.io/'
+copyright: ''
+
+security:
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^CI$'
+      - '^WC_'
+
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: false
+
+params:
+  appearance:
+    theme_day: minimal
+    theme_night: minimal
+    font: minimal
+    font_size: L
+  features:
+    syntax_highlighter:
+      enable: false
+    math:
+      enable: false
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: ''
+    description: 'Applied Scientist at Amazon | Post-Training RL, LLM Evaluation, AI Security'
+  header:
+    navbar:
+      enable: true
+      align: l
+      show_logo: true
+      show_language: false
+      show_day_night: true
+      show_search: false
+      highlight_active_link: true
+  footer:
+    copyright:
+      notice: '© {year} Xin Zhou'
+  locale:
+    date_format: 'Jan 2, 2006'
+    time_format: '3:04 PM'
+
+menus:
+  main:
+    - name: About
+      url: '#about'
+      weight: 10
+    - name: Blog
+      url: '#posts'
+      weight: 20
+    - name: Publications
+      url: '#publications'
+      weight: 30
+    - name: Open Source
+      url: '#projects'
+      weight: 40
+    - name: Contact
+      url: '#contact'
+      weight: 50
