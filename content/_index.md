@@ -12,6 +12,16 @@ sections:
     content:
       title: ''
       username: admin
+    design:
+      background:
+        image:
+          filename: hero-bg.jpg
+          filters:
+            brightness: 0.3
+          parallax: true
+          position: center
+          size: cover
+        text_color_light: true
 
   - block: collection
     id: posts
